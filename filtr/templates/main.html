@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Tweepy OAuth Example</title>
+    </head>
+
+    <body>
+        <h1>Tweepy OAuth Example</h1>
+        <a href="/list_taytay_tweets">List Taylor Swift last 10 Tweets</a>
+        </ul>
+        <hr>
+        {% if logout_url %}
+            <a href="{{ logout_url }}">Logout</a>
+        {% else %}
+            <a href="{{ login_url }}">Login</a>
+        {% endif %}
+    </body>
+
+</html>
