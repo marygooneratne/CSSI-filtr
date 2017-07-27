@@ -1,18 +1,31 @@
 <html>
     <head>
-        <title>Tweepy OAuth Example</title>
+        <title>filtr</title>
+        <link rel="stylesheet" type="text/css" href="static/main.css">
     </head>
 
     <body>
-        <h1>Tweepy OAuth Example</h1>
-        <a href="/list_taytay_tweets">List Taylor Swift last 10 Tweets</a>
-        </ul>
-        <hr>
-        {% if logout_url %}
-            <a href="{{ logout_url }}">Logout</a>
-        {% else %}
-            <a href="{{ login_url }}">Login</a>
-        {% endif %}
+      <div id="header">
+        FILTR
+      </div>
+      <div id="main">
+        <div id="slogan">
+          SMALLER SOCIAL CIRCLES. STRONGER CONNECTIONS.
+        </div>
+      </ul>
+        <div id="buttonrow">
+          <div class="button">
+            {% if logout_url %}
+                <a href="{{ logout_url }}">LOG OUT WITH GOOGLE</a>
+            {% else %}
+                <a href="{{ login_url }}">LOG IN WITH GOOGLE</a>
+            {% endif %}
+          </div>
+          <div class="button">
+            <a href="/listfollowers">FILTER YOUR TWITTER FOLLOWERS</a>
+          </div>
+        </div>
+      </div>
     </body>
 
 </html>
